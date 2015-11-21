@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="571.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+        <items>
+          <Button mnemonicParsing="false" text="Start" />
+            <Button mnemonicParsing="false" text="Stop" />
+            <Button mnemonicParsing="false" text="Delete" />
+        </items>
+      </ToolBar>
+      <Label layoutX="14.0" layoutY="68.0" text="Enter the URL" />
+      <TextField layoutX="120.0" layoutY="63.0" prefHeight="26.0" prefWidth="465.0" promptText="http://" />
+      <Label layoutX="14.0" layoutY="110.0" text="Destination">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <TextField layoutX="120.0" layoutY="105.0" prefHeight="26.0" prefWidth="346.0" promptText="Downloads" />
+      <Button layoutX="481.0" layoutY="105.0" mnemonicParsing="false" text="Browse" />
+      <SplitPane dividerPositions="0.5" layoutX="14.0" layoutY="159.0" orientation="VERTICAL" prefHeight="233.0" prefWidth="571.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="160.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView layoutX="120.0" layoutY="-21.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
